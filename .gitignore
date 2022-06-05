@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+### Firebase Emulator ###
+firestore-debug.log
+ui-debug.log
