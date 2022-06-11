@@ -4,24 +4,24 @@ import com.google.cloud.firestore.annotation.DocumentId;
 import com.google.cloud.spring.data.firestore.Document;
 import dev.lipejose.restaurants.enums.Stars;
 
-import java.util.UUID;
+import java.math.BigInteger;
 
 @Document(collectionName = "restaurantsCollection")
-public class Restaurant {
+public class RestaurantModel {
 
     @DocumentId
-    private UUID id = UUID.randomUUID();
+    private String id;
 
     private String name;
     private String phone;
     private String address;
     private Stars stars;
 
-    public UUID getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(String id) {
         this.id = id;
     }
 
